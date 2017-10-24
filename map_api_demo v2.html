@@ -122,7 +122,7 @@ function initMap() {
 /** Loads the state boundary polygons from a GeoJSON source. */
 function loadMapShapes() {
   // load US state outline polygons from a GeoJson file
-  map.data.loadGeoJson('https://cors-anywhere.herokuapp.com/http://www.veracitiz.com/div_total.json', 
+  map.data.loadGeoJson('https://cors-anywhere.herokuapp.com/http://www.personal_server.com/div_total.json', 
  //-------------------Change acc. DIVISION/STATE 
   {
     idPropertyName: 'DIVISION'
@@ -173,7 +173,7 @@ function loadMapShapes() {
         //console.log(div, censusVariable);
 	
 		google.maps.event.addListener(map.data, "click", function() {
-		window.open("http://www.veracitiz.com/map_api_demo", "_blank")
+		window.open("http://www.personal_server.com/map_api_demo", "_blank")
 		});
 		
     });
@@ -277,7 +277,7 @@ function mouseOutOfRegion(e) {
 <div id="controls" class="nicebox">
   <div>
     <select id="census-variable">
-      <option value="http://www.veracitiz.com/div_value">Percent of population over 25 that completed high school
+      <option value="http://www.personal_server.com/div_value">Percent of population over 25 that completed high school
       </option>
     </select>
   </div>
